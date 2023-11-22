@@ -1,4 +1,4 @@
-package senac.java;
+package senac.java.Views;
 
 
 public class Main {

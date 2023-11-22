@@ -2,13 +2,14 @@ package senac.java.Domain;
 
 import org.json.JSONObject;
 
-public class User {
+public class Adm {
 
     public int id;
     public String nome = "";
     public String sobrenome = "";
     public String genero = "";
     public String dataNasc = "";
+    public String codigo = "";
     public String email = "";
     public String endereco = "";
     public String cep = "";
@@ -17,18 +18,17 @@ public class User {
     public String cpf = "";
     public String telefone = "";
 
-
-
-    public User(String name, String lastName, String genero, String datanasc, String email, String estado, String cidade, String cpf, String telefone){
+    public Adm(){
 
     }
 
-    public User(String nome, String sobrenome, String genero, String dataNasc, String email, String endereco, String cep,
-                String estado, String cidade ,String cpf, String telefone){
+    public Adm(String nome, String sobrenome, String genero, String dataNasc, String codigo,
+               String email, String endereco, String cep, String estado, String cidade ,String cpf, String telefone){
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.genero = genero;
         this.dataNasc = dataNasc;
+        this.codigo = codigo;
         this.email = email;
         this.endereco = endereco;
         this.cep = cep;
@@ -46,6 +46,7 @@ public class User {
         json.put("sobrenome",sobrenome);
         json.put("genero",genero);
         json.put("dataNasc",dataNasc);
+        json.put("codigo",codigo);
         json.put("email",email);
         json.put("endereco",endereco);
         json.put("cep",cep);
@@ -56,7 +57,4 @@ public class User {
 
         return json;
     }
-
 }
-
-

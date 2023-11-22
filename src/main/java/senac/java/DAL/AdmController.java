@@ -1,2 +1,6 @@
-package senac.java.DAL;public class AdmController {
+package senac.java.DAL;
+
+public class AdmController {
+
+
 }

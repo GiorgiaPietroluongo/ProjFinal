@@ -1,2 +1,4 @@
-package senac.java.Services;public class Decisoes {
+package senac.java.Services;
+
+public class Decisoes {
 }
